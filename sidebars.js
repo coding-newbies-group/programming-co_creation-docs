@@ -29,8 +29,8 @@ const sidebars = {
         "p0/p0-3-markdown",
         "p0/p0-4-collaborate",
         "p0/p0-5-cli",
-        "p0/po-5-git-tutorial"
-        "p0/p0-6-python",
+        "p0/po-6-git-tutorial",
+        "p0/p0-7-python",
       ],
       collapsible: false,
     },
