@@ -64,17 +64,17 @@ sidebar_position: 6
 
 8. 检查Python 3.11.2是否安装完成，在Terminal中输入命令后按回车键
 
-查看python解释器版本
-`python3 --version`
+  查看python解释器版本
+  `python3 --version`
 
-查看python解释器版本并可以直接输入代码运行
-`python3`
+  查看python解释器版本并可以直接输入代码运行
+  `python3`
 
-输入第一段代码
-`print("Hello Python")`
+  输入第一段代码
+  `print("Hello Python")`
 
-退出python
-`exit()`
+  退出python
+  `exit()`
 
 ![Alt text](p0-6-python.assets/MacPython00011.jpg)
 
