@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprogramming_co_creation_docs=self.webpackChunkprogramming_co_creation_docs||[]).push([[7035],{5534:o=>{o.exports=JSON.parse('{"label":"docusaurus","permalink":"/programming-co_creation-docs/blog/tags/docusaurus","allTagsPath":"/programming-co_creation-docs/blog/tags","count":4}')}}]);

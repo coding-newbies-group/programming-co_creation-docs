@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprogramming_co_creation_docs=self.webpackChunkprogramming_co_creation_docs||[]).push([[528],{3017:o=>{o.exports=JSON.parse('{"permalink":"/programming-co_creation-docs/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprogramming_co_creation_docs=self.webpackChunkprogramming_co_creation_docs||[]).push([[1489],{7695:o=>{o.exports=JSON.parse('{"label":"hello","permalink":"/programming-co_creation-docs/blog/tags/hello","allTagsPath":"/programming-co_creation-docs/blog/tags","count":2}')}}]);
