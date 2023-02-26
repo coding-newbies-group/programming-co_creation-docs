@@ -41,7 +41,17 @@ sidebar_position: 5
 
 ### 1.2.Mac
 
-> Mac的Git安装待补充
+访问：[Git - 下载地址](https://git-scm.com/download/mac)查看安装命令
+
+![Alt text](p0-5-collaborate.assets/Git0001.jpg)
+
+方式一：已安装homebrew的，直接在Terminal中输入命令
+`brew install git`
+
+![Alt text](p0-5-collaborate.assets/Git0002.jpg)
+
+方式二：已安装MacPorts的，直接在Terminal中输入命令
+`sudo port install git`
 
 
 
