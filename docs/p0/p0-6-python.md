@@ -83,8 +83,7 @@ sidebar_position: 6
 
 ![Alt text](p0-6-python.assets/MacPython00011.jpg)
 
-其他安装方式:用Git安装
-`brew install git python`
+
 
 
 
