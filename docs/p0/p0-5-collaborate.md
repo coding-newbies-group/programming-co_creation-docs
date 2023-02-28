@@ -41,30 +41,30 @@ sidebar_position: 5
 
 ### 1.2.Mac
 
-访问：[Git - 下载地址](https://git-scm.com/download/mac)查看安装命令
+访问：[Git - 下载地址](https://git-scm.com/download/mac)查看安装方式
 
 ![Alt text](p0-5-collaborate.assets/Git0003.jpg)
 
-方式一：下载二进制安装包进行图形化安装
+方式一：点击上图红框中的 installer 打开下图后，点击Download，下载二进制安装包进行图形化安装
 
 ![Alt text](p0-5-collaborate.assets/Git0004.jpg)
 
-双击解压
+下载完成后，双击解压
 ![Alt text](p0-5-collaborate.assets/Git0005.jpg)
 
-双击运行安装包
+解压完后有三个文件，双击第一个安装包运行
 
 ![Alt text](p0-5-collaborate.assets/Git0006.jpg)
 
-
+更多安装方式
 ![Alt text](p0-5-collaborate.assets/Git0001.jpg)
 
-方式一：已安装homebrew的，直接在Terminal中输入命令
+方式二：已安装homebrew的，直接在Terminal中输入命令
 `brew install git`
 
 ![Alt text](p0-5-collaborate.assets/Git0002.jpg)
 
-方式二：已安装MacPorts的，直接在Terminal中输入命令
+方式三：已安装MacPorts的，直接在Terminal中输入命令
 `sudo port install git`
 
 
