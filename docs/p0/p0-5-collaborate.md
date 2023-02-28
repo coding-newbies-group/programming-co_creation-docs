@@ -43,6 +43,20 @@ sidebar_position: 5
 
 访问：[Git - 下载地址](https://git-scm.com/download/mac)查看安装命令
 
+![Alt text](p0-5-collaborate.assets/Git0003.jpg)
+
+方式一：下载二进制安装包进行图形化安装
+
+![Alt text](p0-5-collaborate.assets/Git0004.jpg)
+
+双击解压
+![Alt text](p0-5-collaborate.assets/Git0005.jpg)
+
+双击运行安装包
+
+![Alt text](p0-5-collaborate.assets/Git0006.jpg)
+
+
 ![Alt text](p0-5-collaborate.assets/Git0001.jpg)
 
 方式一：已安装homebrew的，直接在Terminal中输入命令
