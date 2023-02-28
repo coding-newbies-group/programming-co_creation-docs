@@ -41,31 +41,6 @@ sidebar_position: 5
 
 ### 1.2.Mac
 
-1.使用Terminal安装homebrew。homebrew是一个在macOS平台的包管理软件，它提供了简便的方式来安装软件和工具，并且能对软件的安装、更新、卸载进行管理。
-首先看下目前电脑里是否已安装了homebrew，在Terminal终端里输入brew，提示未找到则表示电脑里目前没有homebrew：
-![brew-1](p0-5-collaborate.assets/brew-1.png)
-
-若已安装homebrew，在输入brew时会给出brew的使用示例，输入brew --version则会展示当前homebrew的版本号。电脑已安装homebrew的话，就可以跳过第2步，直接进入第3步流程
-![brew-3](p0-5-collaborate.assets/brew-3.png)
-
-2.输入/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"来完成homebrew的安装
-![brew-2](p0-5-collaborate.assets/brew-2.png)
-
-3.电脑里有了homebrew后，用homebrew这个包管理软件来进行git的安装，在Terminal输入brew install git
-![brew-4](p0-5-collaborate.assets/brew-4.png)
-
-4.下载安装好git后，重启Terminal，输入git --version 若正常返回git版本，则表示git已安装成功
-![brew-5](p0-5-collaborate.assets/brew-5.png)
-
-5.在clone了共创库后，git status查看本地仓库状态时，显示的是中文提示
-![brew-6](p0-5-collaborate.assets/brew-6.png)
-若想修改为英文提示，首先在Terminal里输入code ~/.zshrc，用VSCode编辑~/.zshrc文件
-在~/.zshrc文件内添加alias git="LANG=en_GB git"，然后保存该文件
-![brew-8](p0-5-collaborate.assets/brew-8.png)
-再回到Terminal里输入source ~/.zshrc 这条命令使得刚才添加的内容在配置里生效
-接着再输入git status查看本地仓库状态，此时是英文提示了
-![brew-7](p0-5-collaborate.assets/brew-7.png)
-
 
 ### 1.3.Git的初始配置
 
