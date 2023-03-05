@@ -161,9 +161,16 @@ git config --global user.name "Your Name"
    ![image-20230223141719328](./p0-5-collaborate.assets/image-20230223141719328.png)
 4. 然后Git和Github的通信，就可以通过SSH进行了456：
 
-   ```powershell
+<<<<<<< HEAD
+
+```powershell
+=======
+4. 然后Git和Github的通信，就可以通过SSH进行了：123
+
+   ``` powershell
+>>>>>>> 6994f140a7c946cd8551049b2d229514de1b16b4
    ssh -T git@github.com
-   ```
+```
 
    ![image-20230305160315861](./p0-5-collaborate.assets/image-20230305160315861.png)
 
@@ -190,6 +197,7 @@ git config --global user.name "Your Name"
 **2.新建 SSH 密钥**
 
 1. 生成 SSH 密钥，使用你自己的 Github 邮件地址替换下面的示例邮箱地址。
+
    ```bash
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
@@ -208,10 +216,12 @@ git config --global user.name "Your Name"
 **3.将 SSH 密钥添加到 ssh-agent**
 
 1. 在后台开启 ssh-agent
+
    ```bash
    eval $(ssh-agent -s)
    ```
 2. 使用 `ssh-add` 命令将密钥加载到 ssh-agent 中
+
    ```bash
    ssh-add ~/.ssh/id_rsa
    ```
@@ -224,6 +234,7 @@ git config --global user.name "Your Name"
 **4.复制 SSH 密钥**
 
 1. 打开 id_rsa.pub 文件
+
    ```bash
    cat ~/.ssh/id_rsa.pub
    ```
@@ -233,6 +244,7 @@ git config --global user.name "Your Name"
    &emsp;
 2. 复制出现的文件内容（注意：不要多复制任何空格或换行符）
    PS：也可以通过下面命令行输入命令的方式，将 `~/.ssh/id_rsa.pub` 文件中的内容复制到系统剪切板：
+
    ```bash
    pbcopy < ~/.ssh/id_rsa.pub
    ```
@@ -253,18 +265,22 @@ git config --global user.name "Your Name"
 **6.测试 SSH 连接**
 
 1. 输入以下命令，该命令会尝试 ssh 到 GitHub
+
    ```bash
    ssh -T git@github.com
    ```
 
    可能会看到这样的警告，输入 yes 然后按下回车即可：> The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+
    > RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
    > Are you sure you want to continue connecting (yes/no)?
    >
 
    &emsp;
    2. 如果正确按照上述所有步骤执行，那么会出现下面的提示，表示你可以通过 SSH 连接 Github 了
-      > Hi [你的Github用户名]! You've successfully authenticated, but GitHub does not provide shell access.
+
+   > Hi [你的Github用户名]! You've successfully authenticated, but GitHub does not provide shell access.
+   >
 
 **参考**
 
@@ -439,22 +455,29 @@ From 阿坦:
     如果你的SSH公钥文件的名称与示例代码不同，请修改文件名以符合你当前的设置。在复制你的密钥时，不要添加任何换行或空白。
 
     ```powershell
-    clip < ~/.ssh/id_ed25519.pub
-    # Copies the contents of the id_ed25519.pub file to your clipboard
+
     ```
+
+  cat ~\.ssh\id_ed25519.pub | clip
+
+  # Copies the contents of the id_ed25519.pub file to your clipboard
+
+
+  ```
   - 在 Github 任意页面右上角，点击你的头像，然后点 Settings（设置）
 
-    ![settings](https://assets.quill.im/ykod6mclu76k4g6qbmgo2dmn04fz)
+  ![settings](https://assets.quill.im/ykod6mclu76k4g6qbmgo2dmn04fz)
   - 在侧边栏选择 Access（访问），点 **SSH and GPG keys**.
   - 点 **New SSH key** 或者 **Add SSH key**.
 
-    ![NewSSHkey](https://assets.quill.im/xgotwdq34jr6dney3s1yoplwnyzk)
+  ![NewSSHkey](https://assets.quill.im/xgotwdq34jr6dney3s1yoplwnyzk)
   - 在 "Title" 里，为新 key 添加描述
   - 选择 key 类型（通常保持默认的 authentication 就好）
   - 把你的 public key 粘贴到 "Key" 区域里
 
-    ![KeyPaste](https://assets.quill.im/w3s8faevo100a21moo7rqq9r6nrz)
+  ![KeyPaste](https://assets.quill.im/w3s8faevo100a21moo7rqq9r6nrz)
   - 点击 **Add SSH key**.
 
-    ![AddSSHkey](https://assets.quill.im/gdlkot8oob3g86czq14r3y8sw8zr)
+  ![AddSSHkey](https://assets.quill.im/gdlkot8oob3g86czq14r3y8sw8zr)
   - 如果有提示，请确认你在GitHub上的账户访问权限。
+  ```
