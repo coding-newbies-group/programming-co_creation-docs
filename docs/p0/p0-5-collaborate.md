@@ -172,7 +172,11 @@ git config --global user.name "Your Name"
 
 4. 然后Git和Github的通信，就可以通过SSH进行了：
 
-   ![image-20230223142359261](./p0-5-collaborate.assets/image-20230223142359261.png)
+   ``` powershell
+   ssh -T git@github.com
+   ```
+
+   ![image-20230305160315861](./p0-5-collaborate.assets/image-20230305160315861.png)
 
 ### 2.2.Mac
 
