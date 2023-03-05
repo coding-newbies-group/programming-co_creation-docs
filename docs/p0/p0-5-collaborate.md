@@ -2,7 +2,6 @@
 title: 5.通过Github共创
 sidebar_position: 5
 ---
-
 :::tip 提示
 
 本内容为**新手可选项**，需要参与内容共创的人，该内容是必选项，新手可以在后续逐步上手后，回过头来再学习此部分内容，另外，本内容目前处于早期草稿阶段，需要共创参与者使用与反馈。
@@ -24,14 +23,9 @@ sidebar_position: 5
 
 ![83784115-1e37-494a-bc8c-19b80dfe2303](./p0-5-collaborate.assets/83784115-1e37-494a-bc8c-19b80dfe2303.png)
 
-
-
-
-命令行如果输入`git --version`后有返回 git 版本，表示安装成功：
+命令行如果输入 `git --version`后有返回 git 版本，表示安装成功：
 
 ![image-20230304212442152](./p0-5-collaborate.assets/image-20230304212442152.png)
-
-
 
 ### 1.2.Mac
 
@@ -39,16 +33,19 @@ sidebar_position: 5
 > 后面进阶安装了 Mac 包管理器 Homebrew 或 MacPorts 时，再尝试使用方式一或方式二。
 
 #### 方式一：通过 Homebrew 命令安装
+
 ```bash
 brew install git
 ```
 
 #### 方式二：通过 MacPorts 命令安装
+
 ```bash
 sudo port install git
 ```
 
 #### 方式三：通过安装包安装 Git
+
 - 点击 [Git 官方下载地址 ](https://git-scm.com/downloads) 进入官网下载页面，单击选择 macOS
 
 ![download](p0-5-collaborate.assets/mac_install_git_1-download.png)
@@ -62,37 +59,34 @@ sudo port install git
 - 点击上面第三个框中箭头所指的 [installer](https://sourceforge.net/projects/git-osx-installer/)，会进入下面的界面。
 
   > 注意：这里安装的 Git 版本为 2.33.0，并不是最新的版本，但也并没有太大影响。
+  >
 
 ![git-osx-installer](p0-5-collaborate.assets/mac_install_git_3-git-osx-installer.png)
 
 - 点击上面页面中箭头所指的方框中 Download 按钮，页面会刷新，出现下方图片中的倒计时提示。![wait_time](p0-5-collaborate.assets/mac_install_git_4-wait_time.png)
-
 - 倒数 5 秒后，系统会弹出一个窗口，让你选择你想将安装包放到保存到什么位置。
 
   选择好你要保存的位置后，点击窗口右下角的保存按钮。![choose_install_location](p0-5-collaborate.assets/mac_install_git_5-choose_install_location.png)
-
 - 等待下载完毕后，打开 Finder，找到你保存安装包的位置，会看到一个以 `.dmg` 结尾的安装包文件。然后，双击 `.dmg` 文件。
 
   > dmg 是 Mas 系统上的压缩镜像文件扩展名
+  >
 
   ![double_click](p0-5-collaborate.assets/mac_install_git_6-double_click.png)
-
 - 会弹出下图中的安装窗口，窗口中会出现三个文件，只需要双击 `.pkg` 结尾的文件。
 
   > 其他两个文件，如果好奇可以点开看看。这两个文件并不影响安装 Git。
+  >
 
   ![double_click](p0-5-collaborate.assets/mac_install_git_7-double_click-.png)
-
 - 这个时候，会出现下面的安装窗口。
 
   - 欢迎界面，直接点窗口右下角的继续按钮即可。
 
     ![8-1-install](p0-5-collaborate.assets/mac_install_git_8-1-install.png)
-
   - 这一步是选择安装的磁盘位置
 
     ![8-2-install](p0-5-collaborate.assets/mac_install_git_8-2-install.png)
-
   - 这一步是确认安装。
 
     如果上一步选择磁盘时选择错了，这个时候可以通过 Go Back 按钮返回到上一个安装步骤。
@@ -102,26 +96,24 @@ sudo port install git
     选择完毕后，点击 安装install 按钮。
 
     ![8-3-install](p0-5-collaborate.assets/mac_install_git_8-3-install.png)
-
   - 这个时候会弹出一个安全提示，需要你使用指纹或者手动输入密码，来安装新软件。
 
     > 安装新软件时，通常都会弹出这个安全提示框，需要你使用指纹或密码来确认安装。不用担心。
+    >
 
     ![8-4-install](p0-5-collaborate.assets/mac_install_git_8-4-install.png)
-
   - 点了上面的安装按钮之后，会自动进行安装。
 
     安装完毕之后，会出现下面的界面，提示你安装成功了。
 
     ![8-5-install](p0-5-collaborate.assets/mac_install_git_8-5-install_success.png)
-
 - 点击上图右下角的关闭窗口按钮，会出现下面的弹窗提示，这是系统在询问你要不要将安装包丢到垃圾桶中。按需选择即可。
 
   > 一般在安装新软件成功后，可以删除无用的安装包，当然也可以保留。
+  >
 
   ![move_to_trash](p0-5-collaborate.assets/mac_install_git_9-move_to_trash.png)
-
-- 最后一步，打开`Terminal`，也就是命令行终端，输入命令 `git --version`。
+- 最后一步，打开 `Terminal`，也就是命令行终端，输入命令 `git --version`。
 
   出现 Git 版本号，说明安装 Git 成功了。
 
@@ -155,24 +147,21 @@ git config --global user.name "Your Name"
    ```
 
    ![image-20230223141038778](./p0-5-collaborate.assets/image-20230223141038778.png)
-
 2. 复制ssh公钥的信息：
 
-   在PowerShell中执行下面的命令，然后复制`ssh-ed25519 XXXXXX vwumumu@gmail.com`这一整段内容
+   在PowerShell中执行下面的命令，然后复制 `ssh-ed25519 XXXXXX vwumumu@gmail.com`这一整段内容
 
    ```
    cat ~/.ssh/id_ed25519.pub
    ```
 
    ![image-20230223141358828](./p0-5-collaborate.assets/image-20230223141358828.png)
-
 3. 将公钥信息，配置到Github中，点击“Add SSH Key”，然后输入密码完成添加：
 
    ![image-20230223141719328](./p0-5-collaborate.assets/image-20230223141719328.png)
+4. 然后Git和Github的通信，就可以通过SSH进行了456：
 
-4. 然后Git和Github的通信，就可以通过SSH进行了：
-
-   ``` powershell
+   ```powershell
    ssh -T git@github.com
    ```
 
@@ -181,101 +170,101 @@ git config --global user.name "Your Name"
 ### 2.2.Mac
 
 **1.验证本地电脑是否存在 SSH 密钥**
-   1. 列出 `.ssh` 文件夹下的所有文件
-      ```bash
-      ls -al ~/.ssh 
-      ```
-   2. 检查返回的结果中是否已经存在公共 SSH 密钥
-      默认情况下，Github 支持的公共密钥文件名有以下几种格式：
-      - id_rsa.pub
-      - id_ecdsa.pub
-      - id_ed25519.pub
 
-      &emsp;
-      如果已经存在上面任何一个文件，那么，可以直接跳到步骤 4 继续操作
-      如果不存在，需要从步骤 2 继续操作
+1. 列出 `.ssh` 文件夹下的所有文件
 
+   ```bash
+   ls -al ~/.ssh 
+   ```
+2. 检查返回的结果中是否已经存在公共 SSH 密钥
+   默认情况下，Github 支持的公共密钥文件名有以下几种格式：
 
+   - id_rsa.pub
+   - id_ecdsa.pub
+   - id_ed25519.pub
+
+   &emsp;
+   如果已经存在上面任何一个文件，那么，可以直接跳到步骤 4 继续操作
+   如果不存在，需要从步骤 2 继续操作
 
 **2.新建 SSH 密钥**
 
-   1. 生成 SSH 密钥，使用你自己的 Github 邮件地址替换下面的示例邮箱地址。
-        ```bash
-        ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-        ```
-        &emsp;
-   2. 确定密钥保存的目录（这里可以选择直接回车，保存到默认的位置）
-        ![ssh-keygen](./p0-5-collaborate.assets/p3-3-ssh-keygen.png)
-        &emsp;
-   3. 输入密码（可以选择直接回车，写密码需要写两遍）
-        ![passphrase](./p0-5-collaborate.assets/p3-3-passphrase.png)
-        &emsp;
-        按下两次回车之后，就在默认路径下生成了文件，分别是私钥和公钥。
-        ![public&private-key](./p0-5-collaborate.assets/p3-3-public&private%20key.png)
-   4. 可以使用 `ls -al ~/.ssh` 查看在`.ssh`目录下生成的两个文件。
+1. 生成 SSH 密钥，使用你自己的 Github 邮件地址替换下面的示例邮箱地址。
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
 
-
+   &emsp;
+2. 确定密钥保存的目录（这里可以选择直接回车，保存到默认的位置）
+   ![ssh-keygen](./p0-5-collaborate.assets/p3-3-ssh-keygen.png)
+   &emsp;
+3. 输入密码（可以选择直接回车，写密码需要写两遍）
+   ![passphrase](./p0-5-collaborate.assets/p3-3-passphrase.png)
+   &emsp;
+   按下两次回车之后，就在默认路径下生成了文件，分别是私钥和公钥。
+   ![public&private-key](./p0-5-collaborate.assets/p3-3-public&private%20key.png)
+4. 可以使用 `ls -al ~/.ssh` 查看在 `.ssh`目录下生成的两个文件。
 
 **3.将 SSH 密钥添加到 ssh-agent**
 
-   1. 在后台开启 ssh-agent
-      ```bash
-      eval $(ssh-agent -s)
-      ```
-   2. 使用 `ssh-add` 命令将密钥加载到 ssh-agent 中
-      ```bash
-      ssh-add ~/.ssh/id_rsa
-      ```
-      如果你在 步骤 2 中输入了密码，这里需要重新输入一次。
-      &emsp;
-      没有密码的话，会出现如下提示，说明已经成功添加：
-      ![identity-added](./p0-5-collaborate.assets/p3-3-identity-added.png)
+1. 在后台开启 ssh-agent
+   ```bash
+   eval $(ssh-agent -s)
+   ```
+2. 使用 `ssh-add` 命令将密钥加载到 ssh-agent 中
+   ```bash
+   ssh-add ~/.ssh/id_rsa
+   ```
 
-
+   如果你在 步骤 2 中输入了密码，这里需要重新输入一次。
+   &emsp;
+   没有密码的话，会出现如下提示，说明已经成功添加：
+   ![identity-added](./p0-5-collaborate.assets/p3-3-identity-added.png)
 
 **4.复制 SSH 密钥**
 
-   1. 打开 id_rsa.pub 文件
-      ```bash
-      cat ~/.ssh/id_rsa.pub
-      ```
-      结果如下图：
-      ![rsa_key_pub](./p0-5-collaborate.assets/p3-3-rsa_key_pub.png)
-      &emsp;
-   2. 复制出现的文件内容（注意：不要多复制任何空格或换行符）
-      PS：也可以通过下面命令行输入命令的方式，将 `~/.ssh/id_rsa.pub` 文件中的内容复制到系统剪切板：
-      ```bash
-      pbcopy < ~/.ssh/id_rsa.pub
-      ```
+1. 打开 id_rsa.pub 文件
+   ```bash
+   cat ~/.ssh/id_rsa.pub
+   ```
 
-
+   结果如下图：
+   ![rsa_key_pub](./p0-5-collaborate.assets/p3-3-rsa_key_pub.png)
+   &emsp;
+2. 复制出现的文件内容（注意：不要多复制任何空格或换行符）
+   PS：也可以通过下面命令行输入命令的方式，将 `~/.ssh/id_rsa.pub` 文件中的内容复制到系统剪切板：
+   ```bash
+   pbcopy < ~/.ssh/id_rsa.pub
+   ```
 
 **5.添加到你的 Github 账号**
 
-   1. 登陆你的 Github 账号，在页面右上角找到 Settings(设置)
-       ![settings](./p0-5-collaborate.assets/p3-3-settings.png)
-      &emsp;
-   2. 在左边的菜单栏中找到 SSH 的设置
-       ![ssh](./p0-5-collaborate.assets/p3-3-ssh_and_gpg_keys.png)
-      &emsp;
-   3. 点击上图中右边箭头所指向的 `new SSH key`
-      &emsp;
-   4. 按如下图所示，将 SSH 密钥粘贴到输入框中
-       ![add_ssh_key](./p0-5-collaborate.assets/p3-3-add_ssh_key.png)
+1. 登陆你的 Github 账号，在页面右上角找到 Settings(设置)
+   ![settings](./p0-5-collaborate.assets/p3-3-settings.png)
+   &emsp;
+2. 在左边的菜单栏中找到 SSH 的设置
+   ![ssh](./p0-5-collaborate.assets/p3-3-ssh_and_gpg_keys.png)
+   &emsp;
+3. 点击上图中右边箭头所指向的 `new SSH key`
+   &emsp;
+4. 按如下图所示，将 SSH 密钥粘贴到输入框中
+   ![add_ssh_key](./p0-5-collaborate.assets/p3-3-add_ssh_key.png)
 
 **6.测试 SSH 连接**
-   1. 输入以下命令，该命令会尝试 ssh 到 GitHub
-      ```bash
-      ssh -T git@github.com
-      ```
-      可能会看到这样的警告，输入 yes 然后按下回车即可：
-      > The authenticity of host 'github.com (IP ADDRESS)' can't be established.
-      > RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
-      > Are you sure you want to continue connecting (yes/no)?
+
+1. 输入以下命令，该命令会尝试 ssh 到 GitHub
+   ```bash
+   ssh -T git@github.com
+   ```
+
+   可能会看到这样的警告，输入 yes 然后按下回车即可：> The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+   > RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+   > Are you sure you want to continue connecting (yes/no)?
+   >
 
    &emsp;
    2. 如果正确按照上述所有步骤执行，那么会出现下面的提示，表示你可以通过 SSH 连接 Github 了
-      > Hi [你的Github用户名]! You've successfully authenticated, but GitHub does not provide shell access. 
+      > Hi [你的Github用户名]! You've successfully authenticated, but GitHub does not provide shell access.
 
 **参考**
 
@@ -292,62 +281,51 @@ git config --global user.name "Your Name"
 1. 点击“programming-co_creation-docs”Github仓库页面中的”Fork“按钮：
 
    ![image-20230223085317548](./p0-5-collaborate.assets/image-20230223085317548.png)
-
-
-
 2. 默认会将该仓库Fork到你个人的Github账号下，点击底部”Create fork“按钮，创建”Fork“：
 
    ![image-20230223085548149](./p0-5-collaborate.assets/image-20230223085548149.png)
-
 3. 之后，会发现页面跳转到了自己的Github页面下的”programming-co_creation-docs“仓库：
 
    ![image-20230223090100469](./p0-5-collaborate.assets/image-20230223090100469.png)
-
-
 
 ## 5.从自己的Github克隆知识库到本地
 
 1. 点击自己Github账号下该仓库页面的”Code“——”SSH”，然后复制这个SSH地址，强调一下，地址是以git@开头，不是以Https开头的：
 
    ![image-20230223090916711](./p0-5-collaborate.assets/image-20230223090916711.png)
-
-2. 在本地电脑上新建一个文件夹，比如`C:\projects`，然后执行下面的命令，即可在`C:\projects`文件夹内创建一个名为`programming-co_creation-docs`的文件夹，并将Github仓库的内容下载到该文件夹内：
+2. 在本地电脑上新建一个文件夹，比如 `C:\projects`，然后执行下面的命令，即可在 `C:\projects`文件夹内创建一个名为 `programming-co_creation-docs`的文件夹，并将Github仓库的内容下载到该文件夹内：
 
    ```powershell
    git clone git@github.com:vwumumu/programming-co_creation-docs.git
    ```
 
    ![image-20230223091532189](./p0-5-collaborate.assets/image-20230223091532189.png)
-
-3. 进入到`programming-co_creation-docs`文件夹，查看文件夹下有哪些文件，到这，这一步就可以完成了。
+3. 进入到 `programming-co_creation-docs`文件夹，查看文件夹下有哪些文件，到这，这一步就可以完成了。
 
    ![image-20230223154356747](./p0-5-collaborate.assets/image-20230223154356747.png)
 
-   
-
 ## 6.在本地修改内容
 
-文档库中显示的文档都在`programming-co_creation-docs`内的`docs`文件夹内，之后就可以编辑这些文件夹内的Markdown格式的文件，参与共创。
+文档库中显示的文档都在 `programming-co_creation-docs`内的 `docs`文件夹内，之后就可以编辑这些文件夹内的Markdown格式的文件，参与共创。
 
 ![image-20230223102541407](./p0-5-collaborate.assets/image-20230223102541407.png)
 
 **下面是我通常的操作方式，供大家参考：**
 
-1. 用`VSCode`打开`programming-co_creation-docs`文件夹，可以很方便的看到Markdown源码，也有目录的层级结构：
+1. 用 `VSCode`打开 `programming-co_creation-docs`文件夹，可以很方便的看到Markdown源码，也有目录的层级结构：
 
-   在`programming-co_creation-docs`路径下执行`code .`
+   在 `programming-co_creation-docs`路径下执行 `code .`
 
    ![image-20230223102810980](./p0-5-collaborate.assets/image-20230223102810980.png)
-
-2. 然后，找到需要完善的文件，直接进行编辑，比如下面，为`docs/test/intro.md`，添加了`# 这是测试的内容`：
+2. 然后，找到需要完善的文件，直接进行编辑，比如下面，为 `docs/test/intro.md`，添加了 `# 这是测试的内容`：
 
    ![image-20230223103153973](./p0-5-collaborate.assets/image-20230223103153973.png)
-
 3. 又或者，可以右键点击文件，选择“Open in External App”，我安装了Typora，会用Typora打开Markdown文件进行编辑：
 
    > 注意，这里大家的VSCode会没有“Open in External App”这个选项，需要在VSCode的Extentions里面安装“Open in External App”这个插件。
    >
    > ![image-20230227220449127](./p0-5-collaborate.assets/image-20230227220449127.png)
+   >
 
    ![image-20230223103317649](./p0-5-collaborate.assets/image-20230223103317649.png)
 
@@ -357,15 +335,14 @@ git config --global user.name "Your Name"
 
 当我们完成内容的修改后，就需要把自己本地的内容，提交到自己的Github仓库
 
-1. 查看本地仓库的状态，我们可以看到红色的提示：modified（修改的），我们修改了`docs/test/intro.md`这个文件：
+1. 查看本地仓库的状态，我们可以看到红色的提示：modified（修改的），我们修改了 `docs/test/intro.md`这个文件：
 
    ```
    git status
    ```
 
    ![image-20230223104430801](./p0-5-collaborate.assets/image-20230223104430801.png)
-
-2. 执行`git add .`将更改提交给Git，执行`git commit -m "对这次提交的说明"`，添加对这次提交的说明信息：
+2. 执行 `git add .`将更改提交给Git，执行 `git commit -m "对这次提交的说明"`，添加对这次提交的说明信息：
 
    ```
    git add .
@@ -373,7 +350,6 @@ git config --global user.name "Your Name"
    ```
 
    ![image-20230223104549895](./p0-5-collaborate.assets/image-20230223104549895.png)
-
 3. 将本地的变更推送至自己的Github：
 
    ```powershell
@@ -381,16 +357,12 @@ git config --global user.name "Your Name"
    ```
 
    ![image-20230223104819433](./p0-5-collaborate.assets/image-20230223104819433.png)
-
 4. 刷新自己的Github仓库，可以看到我们提交的备注信息：
 
    ![image-20230223105138793](./p0-5-collaborate.assets/image-20230223105138793.png)
-
 5. 找到文件，可以看到我们修改的内容：
 
    ![image-20230223105224477](./p0-5-collaborate.assets/image-20230223105224477.png)
-
-
 
 ## 8.将自己的修改提交到共学共创仓库（Pull Request）
 
@@ -399,7 +371,6 @@ git config --global user.name "Your Name"
 1. 点击自己仓库的“Pull requests”标签，点击右侧的“New pull request”按钮：
 
    ![image-20230223105417392](./p0-5-collaborate.assets/image-20230223105417392.png)
-
 2. 确认提交的内容并提交；
 
    1.观察提交的方向，是从个人仓库向共学共创仓库；
@@ -409,20 +380,13 @@ git config --global user.name "Your Name"
    3.确认好上面的信息，点击右侧绿色的“Create pull request”按钮创建提交。
 
    ![image-20230223105742790](./p0-5-collaborate.assets/image-20230223105742790.png)
-
 3. 添加一些说明信息，然后点击“Create pull request”，之后，就等待Mumu将提交的内容合并到共学共创仓库就可以了。
 
    ![image-20230223110036786](./p0-5-collaborate.assets/image-20230223110036786.png)
 
 ## 9.冲突处理
 
-
-
-
-
-
-------
-
+---
 
 ## 补充：
 
@@ -439,7 +403,6 @@ From 阿坦:
 **1.生成新的 SSH key.**
 
 - 打开 Powershell
-
 - 粘贴下面的文字，替换成你的GitHub电子邮件地址:
 
   ```powershell
@@ -447,7 +410,6 @@ From 阿坦:
   ```
 
   当你被提示 "输入一个保存密钥的文件 "时，你可以按回车键来接受默认的文件位置。请注意，如果你以前创建过 SSH 密钥，ssh-keygen 可能会要求你重写另一个密钥，在这种情况下，我们建议创建一个自定义命名的 SSH 密钥。要做到这一点，请输入默认的文件位置，并用你的自定义密钥名称替换id_ssh_keyname。
-
 - 在提示符下，输入一个安全口令。
 
 **2.添加你的 SSH key 到 ssh-agent**
@@ -465,13 +427,11 @@ From 阿坦:
   Get-Service ssh-agent
   ```
   ![Start_ssh-agent](https://assets.quill.im/aih7lc92mkduporsuvnlt0mmule7)
-
 - 将你的 SSH 私钥添加到 ssh-agent。如果你用不同的名字创建了你的密钥，或者你正在添加一个有不同名字的现有密钥，请将命令中的id_ed25519替换为你的私钥文件的名字。
 
   ```powershell
   ssh-add ~/.ssh/id_ed25519
   ```
-
 - 添加 SSH key 到你的 Github 账号
 
   - 首先复制 SSH public key 到剪贴板
@@ -482,27 +442,19 @@ From 阿坦:
     clip < ~/.ssh/id_ed25519.pub
     # Copies the contents of the id_ed25519.pub file to your clipboard
     ```
-
   - 在 Github 任意页面右上角，点击你的头像，然后点 Settings（设置）
 
     ![settings](https://assets.quill.im/ykod6mclu76k4g6qbmgo2dmn04fz)
-
   - 在侧边栏选择 Access（访问），点 **SSH and GPG keys**.
-
   - 点 **New SSH key** 或者 **Add SSH key**.
 
     ![NewSSHkey](https://assets.quill.im/xgotwdq34jr6dney3s1yoplwnyzk)
-
   - 在 "Title" 里，为新 key 添加描述
-
   - 选择 key 类型（通常保持默认的 authentication 就好）
-
   - 把你的 public key 粘贴到 "Key" 区域里
 
     ![KeyPaste](https://assets.quill.im/w3s8faevo100a21moo7rqq9r6nrz)
-
   - 点击 **Add SSH key**.
 
     ![AddSSHkey](https://assets.quill.im/gdlkot8oob3g86czq14r3y8sw8zr)
-
   - 如果有提示，请确认你在GitHub上的账户访问权限。
