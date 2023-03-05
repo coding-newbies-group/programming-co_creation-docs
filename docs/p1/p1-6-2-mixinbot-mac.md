@@ -6,7 +6,7 @@
 
 里面的内容不能帮助您搞懂是什么？为什么？能帮助您实现Mixin机器人运行起来。
 
-本文以MAC为例，Windows见[创建Mixin机器人-Windows](./p1-7-1-mixinbot-windows.md),其他操作系统类似。
+本文以MAC为例，Windows见[创建Mixin机器人-Windows](./p1-6-1-mixinbot-windows.md),其他操作系统类似。
 
 
 ## 需要使用到的工具

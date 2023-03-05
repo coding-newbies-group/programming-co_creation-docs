@@ -52,3 +52,4 @@ sidebar_position: 1
 - [01.git的基本用法](./extend/git-basic.md)
 - [02.VSCode插件](./extend/vscode-extentions.md)
     - [Wakatime](./extend/vscode-extentions.md#wakatime)
+- [03.Typora+截图工具的最佳实践](./extend/Typora%2BScreenshot.md)
